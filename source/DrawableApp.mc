@@ -34,6 +34,7 @@ class DrawableApp extends Application.AppBase {
 
     (:glance)
     public function getGlanceView() as [GlanceView] or [GlanceView, GlanceViewDelegate] or Null {
+        System.println("DrawableApp.getGlanceView");
         return [new $.AppGlanceView()];
     }
 
